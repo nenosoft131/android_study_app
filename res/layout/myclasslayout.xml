@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1145dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/ar_bg">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="10dip">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="539dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true">
+
+                <Button
+                        android:id="@+id/btn_exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="308dp"
+                        android:background="@drawable/blankbtn"
+                        android:onClick="clicked"
+                        android:text="@string/exams"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btn_assignment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_alignLeft="@+id/btn_exam"
+                        android:layout_below="@+id/btn_exam"
+                        android:layout_marginTop="52dp"
+                        android:background="@drawable/blankbtn"
+                        android:onClick="clicked"
+                        android:text="@string/assignments"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btn_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_alignBaseline="@+id/btn_exam"
+                        android:layout_alignBottom="@+id/btn_exam"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="100dp"
+                        android:background="@drawable/blankbtn"
+                        android:onClick="clicked"
+                        android:text="@string/tests"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                <Button
+                        android:id="@+id/btn_quizzez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_alignBaseline="@+id/btn_assignment"
+                        android:layout_alignBottom="@+id/btn_assignment"
+                        android:layout_alignLeft="@+id/btn_test"
+                        android:background="@drawable/blankbtn"
+                        android:onClick="clicked"
+                        android:text="@string/quizzez"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dip"
+                        android:layout_marginTop="40dip"
+                        android:text="Class Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"/>
+
+                <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="64dp"
+                        android:text="Time Slot"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"/>
+
+                <TextView
+                        android:id="@+id/tv_temp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView1"
+                        android:layout_alignBottom="@+id/textView1"
+                        android:layout_alignLeft="@+id/btn_exam"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"/>
+
+                <TextView
+                        android:id="@+id/tv_temp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignLeft="@+id/tv_temp1"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"/>
+
+                <TextView
+                        android:id="@+id/tv_temp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView3"
+                        android:layout_alignLeft="@+id/tv_temp2"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"/>
+
+                <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="57dp"
+                        android:text="Professor"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/logo"/>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backgroundfinalland"
+                android:orientation="vertical">
+
+    <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/addnote_icon"
+            android:onClick="onLogoutClick"/>
+
+    <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        <EditText
+                android:id="@+id/et_addnote_note"
+                android:layout_width="480dp"
+                android:layout_height="140dp"
+                android:layout_alignLeft="@+id/et_addnote_subject"
+                android:layout_alignRight="@+id/et_addnote_topic"
+                android:layout_below="@+id/et_addnote_topic"
+                android:layout_marginTop="5dp"
+                android:background="#cccccc"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Start Typing or Writing here "
+                android:inputType="textMultiLine"
+                android:padding="5dip"
+                android:paddingLeft="5dip"
+                android:textSize="12dip"/>
+
+        <com.cyberdesignz.studyup.updateDraw
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_addnote_note"
+                android:layout_alignLeft="@+id/et_addnote_subject"
+                android:layout_alignRight="@+id/et_addnote_note"
+                android:layout_alignTop="@+id/et_addnote_note"
+                android:layout_margin="3dip"
+                android:visibility="invisible"/>
+
+        <Button
+                android:id="@+id/btn_addnote_submitbtn"
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_alignLeft="@+id/et_addnote_note"
+                android:layout_below="@+id/et_addnote_note"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/submitbtn"
+                android:onClick="onUpdateNotesClick"
+                android:textSize="12dip"/>
+
+        <TextView
+                android:id="@+id/textView5_recording"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar1_recording"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/progressBar1_recording"
+                android:text="Recording......"
+                android:visibility="invisible"/>
+
+        <Button
+                android:id="@+id/btnStartPlaying"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignTop="@+id/btnStartRec"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/btnStartRec"
+                android:background="@drawable/play"
+                android:onClick="onStartPlay"/>
+
+        <Button
+                android:id="@+id/btnStopPlaying"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignTop="@+id/btnStartRec"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/btnStartRec"
+                android:background="@drawable/stop"
+                android:onClick="onStopPlay"
+                android:visibility="invisible"/>
+
+        <Button
+                android:id="@+id/btn_addnote_type"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/et_addnote_subject"
+                android:layout_alignLeft="@+id/et_addnote_subject"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/type"
+                android:onClick="OnTypeClick"/>
+
+        <Button
+                android:id="@+id/btn_addnote_draw"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/btn_addnote_type"
+                android:layout_alignBottom="@+id/btn_addnote_type"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/btn_addnote_type"
+                android:background="@drawable/btn_write"/>
+
+        <TextView
+                android:id="@+id/tv_recording"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar1_recording"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/progressBar1_recording"
+                android:text="Recording......"
+                android:visibility="invisible"/>
+
+        <EditText
+                android:id="@+id/et_addnote_subject"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/btn_erase"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Subject e.g Biology"
+                android:paddingLeft="5dip"
+                android:textSize="12dip"
+                android:textStyle="bold"/>
+
+        <AutoCompleteTextView
+                android:id="@+id/et_addnote_class"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/et_addnote_subject"
+                android:layout_alignBottom="@+id/et_addnote_subject"
+                android:layout_alignLeft="@+id/et_addnote_subject"
+                android:layout_marginLeft="145dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Class e.g First"
+                android:textColor="#000000"
+                android:textSize="12dip"
+                android:textStyle="bold"/>
+
+        <EditText
+                android:id="@+id/et_addnote_topic"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/et_addnote_class"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/et_addnote_class"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Topic e.g Reproduction"
+                android:paddingLeft="5dip"
+                android:textSize="12dip"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/btnStopRec"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignBaseline="@+id/btn_addnote_draw"
+                android:layout_alignBottom="@+id/btn_addnote_draw"
+                android:layout_alignRight="@+id/btnStartRec"
+                android:background="@drawable/stoprecord"
+                android:onClick="onStopRec"
+                android:visibility="invisible"/>
+
+        <Button
+                android:id="@+id/button1"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignBaseline="@+id/btn_addnote_submitbtn"
+                android:layout_alignBottom="@+id/btn_addnote_submitbtn"
+                android:layout_alignRight="@+id/view2"
+                android:background="@drawable/share"
+                android:onClick="OnshareClick"/>
+
+        <Button
+                android:id="@+id/btnStartRec"
+                android:layout_width="20dip"
+                android:layout_height="30dip"
+                android:layout_above="@+id/et_addnote_class"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btn_addnote_draw"
+                android:background="@drawable/microphonef"
+                android:onClick="onStartRec"
+                android:visibility="invisible"/>
+
+        <Button
+                android:id="@+id/btn_erase"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignBaseline="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/button2"
+                android:background="@drawable/erase"
+                android:onClick="OnEraseClick"/>
+
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignBaseline="@+id/button3"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/button3"
+                android:background="@drawable/mydraw"
+                android:onClick="OnWriteClick"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar1_recording_update"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnStartPlaying"
+                android:layout_toLeftOf="@+id/btn_erase"
+                android:visibility="invisible"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar1_recording"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar1_recording_update"
+                android:layout_toLeftOf="@+id/btn_erase"
+                android:visibility="invisible"/>
+
+        <Button
+                android:id="@+id/button3"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/button1"
+                android:background="@drawable/clear"
+                android:onClick="onClearClick"/>
+
+        <Button
+            android:id="@+id/btn_stopplaying"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBaseline="@+id/textView5_recording"
+            android:layout_alignBottom="@+id/textView5_recording"
+            android:layout_alignRight="@+id/et_addnote_class"
+            android:background="@drawable/stoprecord"
+            android:onClick="OnstopPlaying" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

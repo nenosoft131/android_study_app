@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_vertical_blank"
+                android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/lock_tablet"/>
+
+    <EditText
+            android:id="@+id/et_login_email"
+            android:layout_width="120dip"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="10dp"
+            android:hint="User Id"
+            android:maxHeight="40dip"
+            android:paddingLeft="7dip"
+            android:layout_marginLeft="5dip"
+            android:textSize="12dip"
+            android:background="@drawable/input_tablet"
+            android:ems="10"/>
+
+    <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="120dip"
+            android:layout_height="20dip"
+            android:textSize="12dip"
+            android:layout_alignLeft="@+id/et_login_email"
+            android:layout_below="@+id/et_login_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_tablet"
+            android:ems="10"
+            android:hint="Password"
+            android:paddingLeft="7dip"
+            android:inputType="textPassword">
+
+
+    </EditText>
+
+    <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="70dip"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/et_login_password"
+            android:layout_below="@+id/et_login_password"
+            android:layout_marginTop="10dp"
+            android:onClick="onLoginclick"
+            android:background="@drawable/login_txt_btn_blue"
+            />
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_login_login"
+            android:layout_below="@+id/btn_login_login"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:text="Forget Password ?"
+            android:textColor="@android:color/white"
+            />
+
+    <Button
+            android:id="@+id/btn_login_register"
+            android:layout_width="70dip"
+            android:layout_height="20dip"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="10dp"
+            android:onClick="onRegisterClick"
+            android:background="@drawable/sign_up_txt_btn_blue"/>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="10dip"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Login"/>
+
+</RelativeLayout>

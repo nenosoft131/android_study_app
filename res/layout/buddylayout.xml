@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/buddyimage"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/textarea"/>
+
+    <TextView
+            android:id="@+id/buddytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buddyimage"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/buddyimage"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#cccccc"/>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buddytextview"
+            android:layout_alignLeft="@+id/buddytextview"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3333cc"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buddyimage"
+            android:layout_below="@+id/buddyimage"
+            android:text=""/>
+
+</RelativeLayout>

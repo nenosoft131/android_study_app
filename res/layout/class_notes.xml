@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+    <ListView
+            android:id="@+id/l_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="20dip">
+    </ListView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_brown">
+    </RelativeLayout>
+
+</RelativeLayout>

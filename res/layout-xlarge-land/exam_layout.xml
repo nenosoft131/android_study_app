@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/ar_bg"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/ed_first"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dip"
+                android:ems="10"
+                android:hint="Name" >
+
+                <requestFocus android:layout_width="match_parent" />
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ed_first"
+                android:layout_alignRight="@+id/ed_first"
+                android:layout_below="@+id/ed_first"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quiz Date Time" />
+
+            <Button
+                android:id="@+id/btn_submit_exam"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/ed_second"
+                android:layout_below="@+id/edt_comments"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blankbtn"
+                android:onClick="submit"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relativeLayout1"
+                android:layout_alignRight="@+id/relativeLayout1"
+                android:layout_below="@+id/btn_submit_exam"
+                android:gravity="center"
+                android:text="asd"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#0066cc"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="300dip"
+                android:layout_height="240dip"
+                android:layout_marginTop="330dip"
+                android:background="#0066CC" >
+
+                <ListView
+                    android:id="@+id/lv_exams"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dip"
+                    android:layout_alignLeft="@+id/btn_submit_exam"
+                    android:layout_alignRight="@+id/btn_submit_exam"
+                    android:layout_below="@+id/btn_submit_exam"
+                    android:layout_margin="5dp"
+                    android:background="#ffffff" >
+                </ListView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="120dip"
+                android:layout_alignLeft="@+id/ed_second"
+                android:layout_alignRight="@+id/ed_second"
+                android:layout_below="@+id/ed_second"
+                android:layout_marginTop="10dip"
+                android:ems="10"
+                android:hint="Type here"
+                android:inputType="textMultiLine" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

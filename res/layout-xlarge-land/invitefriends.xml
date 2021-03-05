@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backgroundfinalland">
+
+    <EditText
+            android:id="@+id/editText1"
+            android:layout_width="350dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:hint="Type Email"/>
+
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/blankbtn"
+            android:onClick="OnContacts"
+            android:text="Add emails from contacts"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    <ListView
+            android:id="@+id/list_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignRight="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="16dp"
+            android:background="#cccccc"
+            android:cacheColorHint="#cccccc">
+    </ListView>
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/textarea">
+
+        <Button
+                android:id="@+id/btn_friendlist"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="460dp"
+                android:background="@drawable/friendlisttab"
+                android:onClick="OnFrienlistclick"/>
+
+        <Button
+                android:id="@+id/btn_findfriends"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_friendlist"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/btn_friendlist"
+                android:background="@drawable/searchfriendtab"
+                android:onClick="OnFindFriendClick"/>
+
+        <Button
+                android:id="@+id/btn_invitefriends"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_findfriends"
+                android:layout_alignBottom="@+id/btn_findfriends"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/btn_findfriends"
+                android:background="@drawable/invitefriend_hover"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="Invite Friends"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignBaseline="@+id/editText1"
+            android:layout_alignBottom="@+id/editText1"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/editText1"
+            android:background="@drawable/addfriend"
+            android:onClick="onaddclick"/>
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/button3"
+            android:background="@drawable/blankbtn"
+            android:onClick="OnSendinvitation"
+            android:text="Send Invitaion"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+</RelativeLayout>

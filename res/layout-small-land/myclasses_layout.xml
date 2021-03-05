@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundfinalland"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip" >
+
+        <ListView
+            android:id="@+id/lv_classes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="48dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="1dip" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/textarea" >
+
+        <Button
+            android:id="@+id/addclasses"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/classtabbutton"
+            android:onClick="OnAddClassClick" />
+
+        <Button
+            android:id="@+id/myclasses"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/addclasses"
+            android:background="@drawable/my_classes_h"
+            android:onClick="OnMyClassClick" />
+
+        <Button
+            android:id="@+id/deadlines"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/myclasses"
+            android:background="@drawable/deadlinetab"
+            android:onClick="OnDeasLineClick" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="My Classes"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

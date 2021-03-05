@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCFFF0"
+                android:padding="10dip">
+
+    <ImageView
+            android:id="@+id/feed_image"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/picture_man"/>
+
+    <TextView
+            android:id="@+id/feed_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/feed_image"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/feed_image"
+            android:text="TextView"
+            android:textColor="@drawable/texview_color"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/feed_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/feed_user_name"
+            android:layout_below="@+id/feed_user_name"
+            android:layout_marginTop="10dip"
+            android:text="TextView"
+            android:textSize="15sp"
+            android:textColor="#000033"/>
+
+    <Button
+            android:id="@+id/feed_submit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/feed_subject"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Comments"/>
+
+    <TextView
+            android:id="@+id/feed_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/feed_user_name"
+            android:layout_alignBottom="@+id/feed_user_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text="TextView"/>
+
+    <TextView
+            android:id="@+id/tv_count_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/feed_submit"
+            android:layout_alignBottom="@+id/feed_submit"
+            android:layout_alignLeft="@+id/feed_subject"
+            android:layout_below="@+id/feed_subject"
+            android:layout_marginTop="10dip"
+            android:text="TextView"/>
+
+</RelativeLayout>

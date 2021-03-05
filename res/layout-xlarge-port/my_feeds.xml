@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/backgroundfinalport"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_reviewNotes_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/ll_post_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textarea"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/iv_post_flag"
+                android:layout_width="95dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/note_tab_btn"
+                android:onClick="onAddNotesClick"/>
+
+        <Button
+                android:id="@+id/iv_post_man"
+                android:layout_width="95dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/iv_post_flag"
+                android:background="@drawable/reviewnote_tab_btn"
+                android:onClick="onReviewNotesClick"/>
+
+        <Button
+                android:id="@+id/myclasses"
+                android:layout_width="95dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/iv_post_man"
+                android:background="@drawable/pending"
+                android:onClick="onMyClassesClick"/>
+
+        <Button
+                android:id="@+id/iv_post_calender"
+                android:layout_width="95dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/myclasses"
+                android:background="@drawable/myfeeds_hove"
+                android:onClick="onMyFeedsClick"/>
+
+        <Button
+                android:id="@+id/button4"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/iv_post_calender"
+                android:background="@drawable/buddies_tab"
+                android:onClick="OnBuddyClick"/>
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/listfeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="90dip"
+            android:layout_marginLeft="120dip"
+            android:layout_marginRight="70dip"
+            android:layout_marginTop="155dp">
+    </ListView>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_reviewNotes_main"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:text="My Feeds"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>

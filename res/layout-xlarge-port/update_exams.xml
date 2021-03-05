@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="400dip"
+                android:layout_height="600dip"
+                android:background="@drawable/background"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/ar_bg_small"
+            android:gravity="center_horizontal|center_vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+            <EditText
+                    android:id="@+id/ed_first"
+                    android:layout_width="300dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ems="10"
+                    android:layout_marginTop="100dip"
+                    android:hint="Name">
+
+                <requestFocus android:layout_width="match_parent"/>
+            </EditText>
+
+            <EditText
+                    android:id="@+id/ed_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/ed_first"
+                    android:layout_alignRight="@+id/ed_first"
+                    android:layout_below="@+id/ed_first"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Quiz Date Time"/>
+
+            <Button
+                    android:id="@+id/btn_submit_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/ed_second"
+                    android:layout_below="@+id/edt_comments"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/blankbtn"
+                    android:onClick="update"
+                    android:text="Update"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/edt_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dip"
+                    android:layout_alignLeft="@+id/ed_second"
+                    android:layout_alignRight="@+id/ed_second"
+                    android:layout_below="@+id/ed_second"
+                    android:layout_marginTop="10dip"
+                    android:ems="10"
+                    android:hint="type here"
+                    android:inputType="textMultiLine"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

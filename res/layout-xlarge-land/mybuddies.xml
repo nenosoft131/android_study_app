@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backgroundfinalland">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/textarea">
+
+        <Button
+                android:id="@+id/btn_friendlist"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="460dp"
+                android:background="@drawable/friendlist_hover"/>
+
+        <Button
+                android:id="@+id/btn_findfriends"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_friendlist"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/btn_friendlist"
+                android:background="@drawable/searchfriendtab"
+                android:onClick="OnFindFriendClick"/>
+
+        <Button
+                android:id="@+id/btn_invitefriends"
+                android:layout_width="95dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_findfriends"
+                android:layout_alignBottom="@+id/btn_findfriends"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/btn_findfriends"
+                android:background="@drawable/invitefriendtab"
+                android:onClick="onInvite"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="Friends List"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ListView
+            android:id="@+id/listView_buddies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_marginBottom="70dip"
+            android:layout_marginLeft="140dip"
+            android:layout_marginRight="60dip"
+            android:layout_marginTop="130dip">
+    </ListView>
+
+</RelativeLayout>

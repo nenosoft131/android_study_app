@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_selection">
+
+    <TextView
+            android:id="@+id/tv_reviewnotes_layout_subject"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:textColor="#3333cc"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/tv_reviewnotes_layout_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reviewnotes_layout_subject"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="0dip"
+            android:textColor="#999999"
+            android:textSize="15sp"/>
+
+    <TextView
+            android:id="@+id/tv_reviewnotes_layout_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_reviewnotes_layout_date"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="0dip"
+            android:textSize="15sp"/>
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/arrow"/>
+
+    <ImageView
+            android:id="@+id/audio_indicator"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_above="@+id/imageView1"
+            android:layout_marginBottom="58dp"
+            android:layout_marginRight="52dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:background="@drawable/soundindicator"
+            android:visibility="invisible"/>
+
+    <ImageView
+            android:id="@+id/noteimage"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignBottom="@+id/audio_indicator"
+            android:layout_marginRight="21dp"
+            android:layout_toLeftOf="@+id/audio_indicator"
+            android:background="@drawable/noteicon"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ListView
+            android:id="@+id/lv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="50dip"
+            android:layout_marginBottom="100dip"
+            android:layout_marginTop="34dp">
+    </ListView>
+
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="120dip"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/lv_contacts"
+            android:background="@drawable/blackbutton"
+            android:onClick="OnaddClick"
+            android:text="ADD"
+            android:textColor="#ffffff"/>
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignLeft="@+id/lv_contacts"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blackbutton"
+            android:onClick="Onbackclick"
+            android:text="Back"
+            android:textColor="#ffffff"/>
+
+</RelativeLayout>

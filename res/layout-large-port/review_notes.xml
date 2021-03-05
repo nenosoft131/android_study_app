@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/backgroundfinalport"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_review_notes_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Review Notes"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_review_notes_header"
+            android:layout_marginBottom="50dip"
+            android:layout_marginTop="25dp">
+
+        <ListView
+                android:id="@+id/lv_calander_events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="88dip"
+                android:layout_marginRight="45dip"
+                android:layout_marginTop="46dip">
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/ll_post_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textarea"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/iv_post_flag"
+                android:layout_width="65dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/note_tab_btn"
+                android:onClick="onAddNotesClick"/>
+
+        <Button
+                android:id="@+id/iv_post_man"
+                android:layout_width="65dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/iv_post_flag"
+                android:background="@drawable/reviewnote_hover"
+                android:onClick="onReviewNotesClick"/>
+
+        <Button
+                android:id="@+id/myclasses"
+                android:layout_width="65dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/iv_post_man"
+                android:background="@drawable/classtabbutton"
+                android:onClick="onMyClassesClick"/>
+
+        <Button
+                android:id="@+id/iv_post_calender"
+                android:layout_width="65dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/myclasses"
+                android:background="@drawable/myfeeds_tab_btn"
+                android:onClick="onMyFeedsClick"/>
+
+        <Button
+                android:id="@+id/button4"
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dip"
+                android:layout_toRightOf="@+id/iv_post_calender"
+                android:background="@drawable/buddies_tab"
+                android:onClick="OnBuddyClick"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_reviewNotes_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_post_header">
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="106dp"
+                android:text="Review Notes"/>
+    </RelativeLayout>
+
+</RelativeLayout>

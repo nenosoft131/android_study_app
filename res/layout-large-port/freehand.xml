@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/backgroundfinalland"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/btn_remove"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/textView1"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/erase"/>
+
+            <Button
+                    android:id="@+id/btn_write"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/btn_remove"
+                    android:background="@drawable/mydraw"
+                    android:onClick="OnWriteClick"/>
+
+            <Button
+                    android:id="@+id/btn_clear"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btn_remove"
+                    android:layout_marginRight="23dp"
+                    android:layout_toLeftOf="@+id/btn_write"
+                    android:background="@drawable/clear"
+                    android:onClick="OnClearClick"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="663dp">
+
+        <Button
+                android:id="@+id/btn_addnote_type"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="438dp"
+                android:layout_marginTop="96dp"
+                android:onClick="OnTypeClick"
+                android:background="@drawable/type"/>
+
+        <Button
+                android:id="@+id/btn_addnote_draw"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/btn_addnote_type"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/btn_addnote_type"
+                android:background="@drawable/btn_write"/>
+
+        <EditText
+                android:id="@+id/et_addnote_subject"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_addnote_type"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Subject e.g Biology">
+
+            <requestFocus/>
+        </EditText>
+
+        <AutoCompleteTextView
+                android:id="@+id/et_addnote_class"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/et_addnote_subject"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/et_addnote_subject"
+                android:ems="10"
+                android:text="AutoCompleteTextView"/>
+
+        <EditText
+                android:id="@+id/et_addnote_topic"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/et_addnote_class"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/et_addnote_class"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Topic e.g Reproduction"/>
+
+        <EditText
+                android:id="@+id/editText1"
+                android:layout_width="400dp"
+                android:layout_height="380dp"
+                android:layout_alignLeft="@+id/et_addnote_subject"
+                android:layout_alignRight="@+id/et_addnote_topic"
+                android:layout_below="@+id/et_addnote_subject"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textarea"
+                android:ems="10"/>
+
+        <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText1"
+                android:layout_below="@+id/editText1"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/submit_btn"/>
+    </RelativeLayout>
+
+</LinearLayout>

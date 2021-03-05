@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc" >
+
+    <RelativeLayout
+        android:id="@+id/ada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dip" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="Comments"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_header"
+            android:background="@drawable/top_brown" />
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="wrap_content"
+            android:layout_height="310dip"
+            android:layout_below="@+id/rl_header" >
+
+            <ListView
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+            </ListView>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <EditText
+            android:id="@+id/edt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:hint="Enter Your Comments"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/comment_post"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/edt_comment"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/submit_new" />
+
+        <Button
+            android:id="@+id/comment_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignBaseline="@+id/comment_post"
+            android:layout_alignBottom="@+id/comment_post"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/cancel_new" />
+    </RelativeLayout>
+
+</RelativeLayout>

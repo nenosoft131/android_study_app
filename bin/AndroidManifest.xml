@@ -1,0 +1,141 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyberdesignz.studyup"
+    android:versionCode="5"
+    android:versionName="1.0.4" 
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <android:targetSdkVersion />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".global"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Signin"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".AddNotes"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".UpdateNote"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".MyFeeds"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ReviewNotes"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".FreehandView"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".LikeNote"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="PostComments"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="Profile"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="Myclasses" >
+        </activity>
+        <activity android:name="AddClassActivity" >
+        </activity>
+        <activity android:name="ClassManager" >
+        </activity>
+        <activity android:name="DeadlinesActivity" >
+        </activity>
+        <activity android:name="MyClassesActivity" >
+        </activity>
+        <activity
+            android:name="MyExamActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="MyClassActivity" >
+        </activity>
+        <activity android:name="mybuddies" >
+        </activity>
+        <activity android:name="searchfriend" >
+        </activity>
+        <activity android:name="InviteFriends" >
+        </activity>
+        <activity android:name="FacebookActivity" >
+        </activity>
+        <activity android:name="addfriend" >
+        </activity>
+        <activity android:name=".adapter.removefriend" >
+        </activity>
+        <activity
+            android:name="reademailsfromcontacts"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="AddMarks"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="Exam_Marks" >
+        </activity>
+        <activity android:name="Test_Marks" >
+        </activity>
+        <activity android:name="Assignmenst_marks" >
+        </activity>
+        <activity android:name="quiz_marks" >
+        </activity>
+        <activity
+            android:name="timeslot"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="timepickerclass" >
+        </activity>
+        <activity
+            android:name="class_noteas"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="UpdateExam"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+    </application>
+
+</manifest>

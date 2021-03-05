@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="59dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"/>
+
+    <TextView
+            android:id="@+id/text_classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ed_marks"
+            android:layout_alignLeft="@+id/text_name"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0066cc"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ed_marks"
+            android:layout_below="@+id/ed_marks"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+            android:id="@+id/submit"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_alignBottom="@+id/ed_marks"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blackbutton"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:id="@+id/ed_marks"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_name"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/submit"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

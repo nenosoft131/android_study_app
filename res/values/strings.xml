@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">Study Up</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Study Up</string>
+    <string name="country_prompt">Choose Your class</string>
+    <string name="addClass">Add Class</string>
+    <string name="myClasses">My Classes</string>
+    <string name="upcomingDeadlined">Upcoming Deadlines</string>
+    <string name="subject">Subject e.g Biology</string>
+    <string name="className">Class Name</string>
+    <string name="professor">Professor</string>
+    <string name="textbooks">Text Book(s)</string>
+    <string name="timeSlot">TIme Slot</string>
+    <string name="quizzez">Quizzes</string>
+    <string name="assignments">Assignments</string>
+    <string name="tests">Tests</string>
+    <string name="exams">Exams</string>
+    <string name="app_id">447013262042715</string>
+    <string name="h_topic">Topic: Ex. Reproduction</string>
+    <string name="h_class">Class: Ex. Biology 102</string>
+    <string name="h_subject">Subject: Ex. Biology</string>
+
+</resources>

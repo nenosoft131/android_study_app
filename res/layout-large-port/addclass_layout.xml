@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backgroundfinalland"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="43dp"
+            android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="200dip"
+            android:layout_height="280dip"
+            android:layout_marginLeft="100dip"
+            android:layout_marginTop="450dip"
+            android:background="#0066CC">
+
+        <ListView
+                android:id="@+id/lv_books"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/btn_submit_exam"
+                android:layout_alignRight="@+id/btn_submit_exam"
+                android:layout_below="@+id/btn_submit_exam"
+                android:layout_margin="7dp"
+                android:background="#ffffff">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="200dip"
+            android:layout_height="280dip"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginLeft="360dip"
+            android:background="#0066CC">
+
+        <ListView
+                android:id="@+id/lv_Time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:background="#ffffff">
+        </ListView>
+    </LinearLayout>
+
+    <EditText
+            android:id="@+id/ed_profes"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ed_addBook"
+            android:layout_alignRight="@+id/linearLayout3"
+            android:layout_below="@+id/actv_subject"
+            android:layout_marginTop="86dip"
+            android:ems="10"
+            android:hint="@string/professor">
+
+        <requestFocus/>
+    </EditText>
+
+    <AutoCompleteTextView
+            android:id="@+id/actv_subject"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ed_addBook"
+            android:layout_alignRight="@+id/ed_class"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="140dp"
+            android:ems="10"
+            android:hint="@string/subject"/>
+
+    <EditText
+            android:id="@+id/ed_addBook"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:layout_alignTop="@+id/ed_profes"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="@string/textbooks"/>
+
+    <AutoCompleteTextView
+            android:id="@+id/ed_class"
+            android:layout_width="620dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ed_profes"
+            android:layout_alignRight="@+id/ed_profes"
+            android:layout_below="@+id/actv_subject"
+            android:layout_marginTop="20dip"
+            android:ems="10"
+            android:hint="@string/className"/>
+
+    <Button
+            android:id="@+id/submit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="130dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/submitbtn"
+            android:onClick="submitClass"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="410dp"
+            android:background="@drawable/textarea">
+
+        <Button
+                android:id="@+id/addclasses"
+                android:layout_width="75dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="180dip"
+                android:background="@drawable/add_classes_h"/>
+
+        <Button
+                android:id="@+id/myclasses"
+                android:layout_width="75dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/addclasses"
+                android:background="@drawable/myclassestab"
+                android:onClick="OnMyClassClick"/>
+
+        <Button
+                android:id="@+id/deadlines"
+                android:layout_width="75dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/myclasses"
+                android:background="@drawable/deadlinetab"
+                android:onClick="OnDeasLineClick"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/btn_addBook"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBaseline="@+id/ed_addBook"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_toLeftOf="@+id/button_start"
+            android:background="@drawable/add"
+            android:onClick="addBook"
+            android:textColor="#ffffff"/>
+
+    <Button
+            android:id="@+id/button_start"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/linearLayout3"
+            android:layout_alignRight="@+id/ed_profes"
+            android:layout_alignTop="@+id/ed_addBook"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/blankbtn"
+            android:onClick="OnTimeslotclick"
+            android:text="Time Slots"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+</RelativeLayout>
