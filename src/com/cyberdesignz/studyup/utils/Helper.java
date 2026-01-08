@@ -5,7 +5,6 @@ import java.net.URLEncoder;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Base64;
@@ -41,6 +40,11 @@ public class Helper {
         Log.e("LOOK", imageEncoded);
         return imageEncoded;
     }
+    
+    public static Bitmap decodeBase64ToBitmap(String encodedImage) {
+    byte[] decodedBytes = Base64.decode(encodedImage, Base64.NO_WRAP);
+    return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length);
+    }
 
     public static String EncodeURL(String url) {
         try {
@@ -51,13 +55,13 @@ public class Helper {
         }
     }
 
-    public static Date GetDate(String string) {
-        try {
-            return dateFormat.parse(string);
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            return null;
-        }
-    }
+    // public static Date GetDate(String string) {
+    //     try {
+    //         return dateFormat.parse(string);
+    //     } catch (ParseException e) {
+    //         // TODO Auto-generated catch block
+    //         return null;
+    //     }
+    // }
 
 }
